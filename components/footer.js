@@ -110,7 +110,7 @@ export default function Footer() {
                   Development Services
                 </Typography>
                 {footerDevelopment.map((x) => (
-                  <Box sx={{  }}>
+                  <Box key={x}>
                     <Typography
                       key={x}
                       sx={{
@@ -118,7 +118,6 @@ export default function Footer() {
                         fontWeight: "bold",
                         lineHeight: 2,
                         cursor: "pointer",
-                        
                       }}
                     >
                       {x}
@@ -146,7 +145,6 @@ export default function Footer() {
                       fontWeight: "bold",
                       lineHeight: 2,
                       cursor: "pointer",
-
                     }}
                   >
                     {x}
@@ -161,7 +159,6 @@ export default function Footer() {
                     color: "#D3D3D4",
                     fontWeight: "bolder",
                     lineHeight: 5,
-                    
                   }}
                 >
                   Contacts
@@ -174,7 +171,6 @@ export default function Footer() {
                       fontWeight: "bold",
                       lineHeight: 2,
                       cursor: "pointer",
-
                     }}
                   >
                     {x}

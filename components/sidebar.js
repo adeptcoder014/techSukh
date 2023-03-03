@@ -93,7 +93,7 @@ export default function TemporaryDrawer(props) {
               fontWeight: "bolder",
               color: "white",
               alignSelf: "center",
-              mr:8
+              mr: 8,
             }}
           >
             {" "}
@@ -135,6 +135,7 @@ export default function TemporaryDrawer(props) {
           //       {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
           //     </ListItemIcon>
           <Accordion
+            key={text.title}
             sx={{
               backgroundColor: "royalBlue",
               width: "90%",
@@ -153,7 +154,9 @@ export default function TemporaryDrawer(props) {
             </AccordionSummary>
             <AccordionDetails>
               {text?.sub?.map((x) => (
-                <Typography sx={{ mt: 1 }}>{x}</Typography>
+                <Typography key={x} sx={{ mt: 1 }}>
+                  {x}
+                </Typography>
               ))}
             </AccordionDetails>
           </Accordion>

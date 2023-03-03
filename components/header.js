@@ -317,7 +317,7 @@ function Header() {
                 },
               }}
             >
-              Let's Talk
+              Lets Talk
             </Button>
           </Box>
         </Toolbar>
