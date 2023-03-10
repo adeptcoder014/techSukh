@@ -7,9 +7,10 @@ export default function Hero() {
 
   return (
     <Container
-      maxWidth="xl"
+
       sx={{
-        mt: 5,
+        backgroundColor: "#0080FF",
+        // width: "100vw",
         [theme.breakpoints.down(500)]: {
           //   backgroundColor: "red",
         },
@@ -28,7 +29,7 @@ export default function Hero() {
         <Typography
           sx={{
             fontWeight: "bolder",
-            color: "#7ed192",
+            color: "lightGreen",
           }}
         >
           creative agency
@@ -48,7 +49,7 @@ export default function Hero() {
             variant="h3"
             sx={{
               fontWeight: "bolder",
-              color: "black",
+              color: "#a8f2fe",
               [theme.breakpoints.down("sm")]: {
                 fontSize: 35,
                 width: "110%",
@@ -60,14 +61,16 @@ export default function Hero() {
               src="/rocket.png"
               width={70}
               height={70}
-              sx={{
-                // [theme.breakpoints.down("sm")]: {
-                //   width: 250,
-                //   height: 340,
-                //   position:"absolute",
-                //   top:10
-                // },
-              }}
+              sx={
+                {
+                  // [theme.breakpoints.down("sm")]: {
+                  //   width: 250,
+                  //   height: 340,
+                  //   position:"absolute",
+                  //   top:10
+                  // },
+                }
+              }
             />
             Skyrocket your business with our digital marketing solutions.
           </Typography>
@@ -75,7 +78,7 @@ export default function Hero() {
           <Typography
             sx={{
               fontWeight: "bolder",
-              color: "gray",
+              color: "white",
               mt: 3,
               [theme.breakpoints.down("sm")]: {
                 mb: 4,

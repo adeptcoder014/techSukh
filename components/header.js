@@ -61,20 +61,21 @@ function Header() {
       >
         <Toolbar
           sx={{
-            backgroundColor: "white",
+            backgroundColor: "#0080FF",
+            p:4
           }}
         >
-          <Image src="/cd.svg" width={100} height={100} />
+          <Image src="/logo.png" width={70} height={70} />
           <Typography
-            variant="h6"
             sx={{
               fontWeight: "bolder",
               // ml: -2,
-              color: "#0e0e0e",
+              color: "white",
               width: "100%",
+              fontSize:22
             }}
           >
-            Digital Sukh
+            CLEAR DIGITAL 
           </Typography>
 
           <Box sx={{ ml: 1, display: "flex" }}>
@@ -85,7 +86,7 @@ function Header() {
                 cursor: "pointer",
                 fontWeight: "bolder",
 
-                color: "#8a8a8e",
+                color: "white",
               }}
             >
               About
@@ -98,7 +99,7 @@ function Header() {
                 cursor: "pointer",
                 fontWeight: "bolder",
 
-                color: "#8a8a8e",
+                color: "white",
               }}
             >
               Development
@@ -130,7 +131,7 @@ function Header() {
                   sx={{
                     "&:hover": {
                       color: "white",
-                      backgroundColor: "royalBlue",
+                      backgroundColor: "#0080FF",
                       borderRadius: 1,
                     },
                   }}
@@ -145,7 +146,7 @@ function Header() {
                   sx={{
                     "&:hover": {
                       color: "white",
-                      backgroundColor: "royalBlue",
+                      backgroundColor: "#0080FF",
                       borderRadius: 1,
                     },
                   }}
@@ -157,7 +158,7 @@ function Header() {
                   sx={{
                     "&:hover": {
                       color: "white",
-                      backgroundColor: "royalBlue",
+                      backgroundColor: "#0080FF",
                       borderRadius: 1,
                     },
                   }}
@@ -173,7 +174,7 @@ function Header() {
               sx={{
                 ml: 10,
                 cursor: "pointer",
-                color: "#8a8a8e",
+                color: "white",
                 fontWeight: "bolder",
               }}
             >
@@ -198,7 +199,7 @@ function Header() {
                   sx={{
                     "&:hover": {
                       color: "white",
-                      backgroundColor: "royalBlue",
+                      backgroundColor: "#0080FF",
                       borderRadius: 1,
                     },
                   }}
@@ -210,7 +211,7 @@ function Header() {
                   sx={{
                     "&:hover": {
                       color: "white",
-                      backgroundColor: "royalBlue",
+                      backgroundColor: "#0080FF",
                       borderRadius: 1,
                     },
                   }}
@@ -222,7 +223,7 @@ function Header() {
                   sx={{
                     "&:hover": {
                       color: "white",
-                      backgroundColor: "royalBlue",
+                      backgroundColor: "#0080FF",
                       borderRadius: 1,
                     },
                   }}
@@ -240,7 +241,7 @@ function Header() {
               sx={{
                 ml: 10,
                 cursor: "pointer",
-                color: "#8a8a8e",
+                color: "white",
                 fontWeight: "bolder",
               }}
             >
@@ -305,8 +306,8 @@ function Header() {
           >
             <Button
               sx={{
-                backgroundColor: "royalBlue",
-                color: "white",
+                backgroundColor: "white",
+                color: "#0080FF",
                 fontWeight: "bolder",
                 p: "10px 30px",
                 "&:hover": {

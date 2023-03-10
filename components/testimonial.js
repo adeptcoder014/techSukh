@@ -7,20 +7,26 @@ import {
   useTheme,
 } from "@mui/material";
 import Image from "next/image";
+import ReactStars from "react-rating-stars-component";
+
 //======================================
 
 const testimonials = [
   {
-    icon: <Image src="/company.png" width={90} height={90} />,
+    title: "Dr.Ritvik,ceo-ClearDigital",
+    icon: <Image src="/testimonials/test1.png" width={120} height={120} />,
     review:
-      "ClearDigital always ensured that our success is their priority. As we know digital marketing has become the most important unit of every business, and skillstride is more than happy with Digital Marketing services provided by ClearDigital.",
+      "ClearDigital always ensure unit of every business, and skillstride is more than happy with Digital Marketing services provided by ClearDigital.",
   },
   {
-    icon: <Image src="/company.png" width={90} height={90} />,
+    title: "Artist Ritvik,ceo-LifeHai",
+    icon: <Image src="/testimonials/test1.png" width={90} height={90} />,
     review: "ClearDigital always ensured that our succeery business, and skill",
   },
   {
-    icon: <Image src="/company.png" width={90} height={90} />,
+    title: "Romeo Ritvik,ceo-ClearLove",
+
+    icon: <Image src="/testimonials/test1.png" width={90} height={90} />,
     review:
       "ClearDigital always ensured that our success is their priority. As we know digital marketing has become the most important unit of every business, and skillstri",
   },
@@ -65,9 +71,9 @@ export default function Testimonials() {
               fontWeight: "bolder",
               [theme.breakpoints.down("sm")]: {
                 width: "120%",
-                fontSize:54,
-                mb:-4,
-                ml:-2
+                fontSize: 54,
+                mb: -4,
+                ml: -2,
               },
             }}
           >
@@ -82,9 +88,8 @@ export default function Testimonials() {
               justifyContent: "center",
               alignItems: "center",
               [theme.breakpoints.down("sm")]: {
-               mt:5
+                mt: 5,
               },
-
             }}
             key={x}
             item
@@ -96,9 +101,9 @@ export default function Testimonials() {
           >
             <Box
               sx={{
-                backgroundColor: "#80808047",
+                background: "linear-gradient(264deg, #97d1ff, #0080FF)",
                 display: "flex",
-                height:"80%",
+                height: "80%",
                 flexDirection: "column",
                 borderRadius: 4,
                 p: 5,
@@ -113,7 +118,23 @@ export default function Testimonials() {
             >
               {/* <Image src="/digital.png" width={90} height={90} /> */}
               {x.icon}
-              <Typography variant="h7" sx={{ color: "gray", mt: 5, mb: 3 }}>
+              <Typography
+                sx={{
+                  fontWeight: "bolder",
+                  fontSize:14
+                }}
+              >
+                {x.title}
+              </Typography>
+              <ReactStars
+                count={5}
+                value={4}
+                // onChange={ratingChanged}
+                size={24}
+                activeColor="#ffd700"
+              />
+              ,
+              <Typography variant="h7" sx={{ color: "white", mt: 1, mb: 1 }}>
                 {"'' "}
                 {x.review}
                 {" '' "}

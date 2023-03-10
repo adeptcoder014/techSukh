@@ -32,7 +32,7 @@ export default function Footer() {
         fullWidth
         container
         sx={{
-          backgroundColor: "#27272e",
+          background: "linear-gradient(45deg, #0080FF, #57a3ed)",
           p: 10,
           display: "flex",
           justifyContent: "space-around",
@@ -53,7 +53,7 @@ export default function Footer() {
             <Typography
               variant="h2"
               sx={{
-                color: "#D3D3D4",
+                color: "white",
                 fontWeight: "bolder",
               }}
             >
@@ -61,7 +61,7 @@ export default function Footer() {
             </Typography>
             <Typography
               sx={{
-                color: "#D3D3D4",
+                color: "white",
                 mt: 2,
               }}
             >
@@ -102,7 +102,7 @@ export default function Footer() {
                 <Typography
                   variant="h7"
                   sx={{
-                    color: "#D3D3D4",
+                    color: "white",
                     fontWeight: "bolder",
                     lineHeight: 5,
                   }}
@@ -114,7 +114,7 @@ export default function Footer() {
                     <Typography
                       key={x}
                       sx={{
-                        color: "#D3D3D4",
+                        color: "white",
                         fontWeight: "bold",
                         lineHeight: 2,
                         cursor: "pointer",
@@ -130,7 +130,7 @@ export default function Footer() {
               <Box>
                 <Typography
                   sx={{
-                    color: "#D3D3D4",
+                    color: "white",
                     fontWeight: "bolder",
                     lineHeight: 5,
                   }}
@@ -141,7 +141,7 @@ export default function Footer() {
                   <Typography
                     key={x}
                     sx={{
-                      color: "#D3D3D4",
+                      color: "white",
                       fontWeight: "bold",
                       lineHeight: 2,
                       cursor: "pointer",
@@ -156,7 +156,7 @@ export default function Footer() {
               <Box>
                 <Typography
                   sx={{
-                    color: "#D3D3D4",
+                    color: "white",
                     fontWeight: "bolder",
                     lineHeight: 5,
                   }}
@@ -167,7 +167,7 @@ export default function Footer() {
                   <Typography
                     key={x}
                     sx={{
-                      color: "#D3D3D4",
+                      color: "white",
                       fontWeight: "bold",
                       lineHeight: 2,
                       cursor: "pointer",
@@ -184,7 +184,7 @@ export default function Footer() {
         <Box
           sx={{
             borderTop: "1px solid gray",
-            color: "#D3D3D4",
+            color: "white",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "space-between",

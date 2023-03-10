@@ -62,6 +62,10 @@ export default function LatestStory() {
           p: 10,
           display: "flex",
           justifyContent: "space-around",
+          [theme.breakpoints.down("sm")]: {
+            p:3,
+           
+          },
         }}
       >
         <Grid

@@ -87,7 +87,7 @@ export default function TemporaryDrawer(props) {
             width: "80%",
           }}
         >
-          <Image src="/cd.svg" height={40} width={40} />
+          <Image src="/logo.png" height={40} width={40} />
           <Typography
             sx={{
               fontWeight: "bolder",
@@ -185,8 +185,17 @@ export default function TemporaryDrawer(props) {
             },
           }}
         >
-          <Box sx={{ display: "flex" }}>
-            <Image src={"/cd.svg"} height={50} width={50} />
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              backgroundColor: "#fffeff",
+              p: 2,
+              borderRadius: 1,
+              width: "100%",
+            }}
+          >
+            <Image src={"/logoSm.png"} height={50} width={50} sx={{}} />
             <Box>
               <Typography
                 sx={{
@@ -209,10 +218,10 @@ export default function TemporaryDrawer(props) {
                 Technologies
               </Typography>
             </Box>
+            <Button onClick={toggleDrawer("left", true)}>
+              <MenuIcon sx={{ color: "gray", fontSize: 24 }} />
+            </Button>
           </Box>
-          <Button onClick={toggleDrawer("left", true)}>
-            <MenuIcon sx={{ color: "gray", fontSize: 24 }} />
-          </Button>
           <Drawer
             anchor={"left"}
             open={state["left"]}

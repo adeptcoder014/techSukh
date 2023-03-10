@@ -11,12 +11,12 @@ import Image from "next/image";
 
 const content = [
   {
-    title: "Digital Marketing",
-    icon: <Image src="/digital.png" width={90} height={90} />,
+    title: "Content Marketing & Graphic Designing",
+    icon: <Image src="/digital.png" width={100} height={100} />,
     desc: "Marketing is not just about good ideas. It is about driving business growth.",
   },
   {
-    title: "Web Development",
+    title: "Customised SaaS Development",
     icon: <Image src="/web.png" width={90} height={90} />,
     desc: "Got An Business Idea? We Help Transformed Ideas Into Profitable World-class Web Applications!.",
   },
@@ -94,7 +94,7 @@ export default function Services() {
             <Box
               sx={{
                 boxShadow: "0px 0px 6px 0px #80808047",
-                backgroundColor: "#80808047",
+                background:"linear-gradient(264deg, #97d1ff, #0080FF)",
                 borderRadius: 4,
                 p: 5,
                 height: "80%",
@@ -106,21 +106,21 @@ export default function Services() {
               }}
             >
               {/* <Image src="/digital.png" width={90} height={90} /> */}
-              {x.icon}
+              <Box sx={{display:"flex",justifyContent:"center"}}>{x.icon}</Box>
               <Typography
-                variant="h6"
-                sx={{ color: "black", fontWeight: "bolder", mt: 5, mb: 3 }}
+                variant="h5"
+                sx={{ color: "white", fontWeight: "bolder", mt: 5, mb: 3 }}
               >
                 {x.title}
               </Typography>
               <Typography
                 sx={{
-                  color: "gray",
+                  color: "#a8f2fe",
                   fontWeight: "bolder",
-                  width:"100%",
+                  width: "100%",
                   mt: 2,
                   // fontFamily: "poppins",
-                  fontSize: 16,
+                  fontSize: 14,
                   mb: 3,
                 }}
               >
@@ -131,8 +131,7 @@ export default function Services() {
                   fontWeight: "bolder",
                   border: "1px solid royalBlue",
                   backgroundColor: "white",
-                  color:"royalBlue"
-
+                  color: "royalBlue",
                 }}
               >
                 Find out more

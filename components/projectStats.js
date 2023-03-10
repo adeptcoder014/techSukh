@@ -44,10 +44,11 @@ export default function ProjectStats() {
         fullWidth
         container
         sx={{
-          backgroundColor: "#27272e",
-          p: 10,
+          background: "linear-gradient(45deg, #0080FF, #57a3ed)",
+          // p: 10,
           display: "flex",
           justifyContent: "space-around",
+        
         }}
       >
         <Grid
@@ -58,9 +59,9 @@ export default function ProjectStats() {
           sm={12}
           xs={12}
           sx={{
-            backgroundColor: "#27272e",
+            background: "linear-gradient(45deg, #0080FF, #57a3ed)",
             borderRadius: 2,
-            p: 2,
+            p: 5,
             
           }}
         >
@@ -77,14 +78,14 @@ export default function ProjectStats() {
           <Typography
             variant="h2"
             sx={{
-              color: "#D3D3D4",
+              color: "white",
               mb: 5,
               textAlign: "center",
               fontWeight: "bolder",
               [theme.breakpoints.down("sm")]: {
-                width: "150%",
+                // width: "150%",
                 fontSize:55,
-                ml:-5
+                // ml:-5
               },
             }}
           >
@@ -93,7 +94,7 @@ export default function ProjectStats() {
         </Grid>
 
         {testimonials.map((x) => (
-          <Grid key={x} item xl={3} lg={3} md={3} sm={12} xs={12}>
+          <Grid key={x} item xl={3} lg={3} md={3} sm={12} xs={12} sx={{mb:2}}>
             <Box
               sx={{
                 // backgroundColor: "#27272e",
@@ -111,7 +112,7 @@ export default function ProjectStats() {
                   mb: 2,
                 },
                 "&:hover": {
-                  background: "#2f2f34",
+                  background: "#3f51b5",
                 },
               }}
             >
@@ -120,7 +121,7 @@ export default function ProjectStats() {
               <Typography
                 variant="h2"
                 sx={{
-                  color: "#5956e9",
+                  color: "white",
                   fontFamily: "poppins",
                   mt: 3,
                   mb: 3,
