@@ -7,7 +7,6 @@ export default function Hero() {
 
   return (
     <Container
-
       sx={{
         backgroundColor: "#0080FF",
         // width: "100vw",
@@ -58,6 +57,7 @@ export default function Hero() {
             }}
           >
             <Image
+              loading="lazy"
               src="/rocket.png"
               width={70}
               height={70}
