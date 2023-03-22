@@ -39,6 +39,10 @@ export default function Home() {
             href="https://fonts.googleapis.com/css2?family=Poppins:wght..300&display=swap"
             rel="stylesheet"
           />
+          <meta
+            name="google-site-verification"
+            content="CAL3__7xZpNYM02GL7PT6D2s3jevwQWx7ZDpkdcm-wk"
+          />
         </Head>
 
         <Hero />
